@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-right: 1090px;
+      font-size: 35px;
+      color: chocolate;
+      text-shadow: 4px 4px 4px rgb(242, 127, 86);
+    }
+
+    .links {
+      margin: 10px 40px 30px 40px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    a:link {
+      color: rgb(0, 0, 0);
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a:active {
+      color: rgb(104, 219, 87);
+    }
+
+    #btn {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      cursor: pointer;
+      padding: 8px;
+      /* color: rgb(116, 84, 61); */
+      border: 2px solid chocolate;
+      font-size: 14px;
+      font-weight: 700;
+      background-color: rgb(228, 141, 79);
+      color: aliceblue;
+    }
+
+    #btn:hover {
+      background-color: rgb(245, 245, 245);
+      color: chocolate;
+    }
+
+    .text {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 40px 20px;
+      width: 80%;
+      margin: -50px auto 20px;
+      box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+
+    .text h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-family: 'Georgia', serif;
+    }
+
+    .text p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .video {
+      margin: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video video {
+      width: 300px; /* Adjusted size */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    #footer {
+      text-align: center;
+      margin-top: 60px;
+      background-color: chocolate;
+      color: aliceblue;
+      padding: 11px;
+      font-size: 18px;
+    }
+    
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.dark-mode nav,
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1e1e1e; /* Dark header/footer/nav */
+}
+
+.dark-mode a {
+  color: #ff8c00; /* Accent link color */
+}
+
+.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #ff8c00;
+}
+
+/* Personal Chef Services Section */
+.personal-chef-services {
+    padding: 50px 20px;
+    background-color: #f8f8f8; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.chef-services-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    gap: 20px;
+}
+
+.chef-image {
+    width: 45%; /* Adjust image size */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chef-services-content {
+    width: 50%;
+    text-align: left;
+}
+
+.chef-services-content h2 {
+    font-size: 36px;
+    color: #FF5733; /* Matches theme */
+    margin-bottom: 20px;
+}
+
+.chef-services-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.chef-contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 200px;
+}
+
+.chef-contact-btn:hover {
+    background-color: white;
+    color: #FF5733;
+    border: 2px solid #FF5733;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1><strong>TASTY TALES</strong></h1>
+  </header>
+  <nav>
+    <a class="links" href="index.php">HOME</a>
+    <a class="links" href="about.html">ABOUT US</a>
+    <a class="links" href="recipes.html">RECIPES</a>
+    <a class="links" href="blog.php">BLOG</a>
+    <button id="dark-mode-btn" class="btn dark-mode-toggle">🌙 Dark Mode</button>
+  </nav>
+  <input type="button" id="btn" value="CONTACT" onclick="window.location.href='contact.html';" />
+  
+  <div class="text">
+    <h3>WE PROVIDE TASTY FOOD RECIPES</h3>
+    <p><strong>Who We Are</strong></p>
+    <p>Home cooks are our heroes—it’s as simple as that. TASTY TALES is a community built by and for kitchen experts. 
+      We celebrate the cooks who dedicate their weekends to perfecting a beef bourguignon but love the simplicity 
+      of a slow-cooker recipe, too...</p>
+    <p>Most importantly, TASTY TALES connects home cooks with their greatest sources of inspiration—other home cooks.</p>
+    <p><strong>Above all, we are:</strong></p>
+    <ul>
+      <li><strong>Friendly:</strong> We love trading ideas and hanging out with fellow home cooks.</li>
+      <li><strong>Supportive:</strong> Struggling with dinner inspiration? We’re here to help!</li>
+      <li><strong>Creative:</strong> Cooking is an art. We experiment and express ourselves through food.</li>
+    </ul>
+    <p>The heart of TASTY TALES is our community of home cooks who share their beloved family recipes...</p>
+    <p><strong>Our Mission</strong></p>
+    <p>At TASTY TALES, our mission is to inspire and empower home cooks to explore their culinary skills and share their delicious creations with the world. We believe that food brings people together, and we’re here to help you make unforgettable memories in the kitchen.</p>
+    <p><strong>Join Us!</strong></p>
+    <p>Whether you’re a novice or an experienced chef, we invite you to join our community. Share your recipes, get feedback, and make friends who share your passion for food!</p>
+</div>
+
+<!-- Personal Chef Services Section -->
+<section class="personal-chef-services">
+  <div class="chef-services-container">
+      <img src="images/personal-chef.jpeg" alt="Personal Chef Services" class="chef-image">
+      <div class="chef-services-content">
+          <h2>Personal Chef Services</h2>
+          <p>
+              Experience the luxury of having your own personal chef! Whether you're hosting a private dinner, 
+              a special event, or just want to enjoy customized meals at home, we've got you covered. 
+              Our chefs bring creativity, fresh ingredients, and exquisite flavors right to your table.
+          </p>
+          <a href="contact.html" class="btn chef-contact-btn">Book Your Chef Now</a>
+      </div>
+  </div>
+</section>
+
+<h2 id="clips">Look At These Tasty Food Clips</h3>
+
+<div class="video-container">
+    <video class="video" height="200px" width="300px" autoplay loop muted>
+        <source src="images/pexels_videos_2620043 (2160p).mp4" type="video/mp4">
+    </video>
+    <video class="video" height="200px" width="300px" autoplay loop muted>
+        <source src="images/video (1080p) (1).mp4" type="video/mp4">
+    </video>
+    <video class="video" height="200px" width="300px" autoplay loop muted>
+        <source src="images/video (1080p).mp4" type="video/mp4">
+    </video>
+</div>
+
+
+  <footer id="footer">&copy; <span id="date"></span> TastyTales Built By RutujaParamane</footer>
+
+  <script>
+    document.getElementById('date').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+

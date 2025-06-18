@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+      font-family:sans-serif;
+      text-align: center;
+    }
+    h1{
+        margin-right: 1090px;
+        margin-top: 30px;
+        color: chocolate;
+        text-shadow: 4px 4px 4px rgb(242, 127, 86);
+        font-size: 35px;
+      }
+
+      .links{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 2px;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-decoration: none;
+  align-items: center;
+}
+
+a:link{
+  color: rgb(0, 0, 0);
+}
+a:hover{
+  color:red;
+}
+a:active{
+  color: rgb(104, 219, 87);
+}
+
+#btn{
+  position: absolute;
+  top: 25px;
+  right:30px;
+  cursor:pointer;
+  padding: 8px;
+  border:2px solid chocolate;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgb(228, 141, 79);
+  color: aliceblue;
+}
+
+#btn:hover{
+  background-color: rgb(245, 245, 245);
+  color: chocolate;
+}
+ 
+.form{
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+  border:2px solid #9b9b9b;
+  background-color: rgb(231, 231, 231);
+  padding:45px 30px 45px 30px ;
+  box-shadow: 3px 3px 3px 3px rgb(136, 131, 131);
+}
+.form-row text{
+   font-size: 20px;
+   margin-left: 20px;
+}
+
+.text{
+  font-size: 20px;
+  margin-right: 70px;
+}
+#username{
+  border:1px solid black;
+  box-shadow: 3px 3px 3px 3px rgb(129, 116, 116);
+  margin-top: 10px;
+}
+#msg{
+  border:1px solid black;
+  box-shadow: 3px 3px 3px 3px rgb(129, 116, 116);
+  margin-top: 10px;
+}
+#email{
+  border:1px solid black;
+  box-shadow: 3px 3px 3px 3px rgb(129, 116, 116);
+  margin-top: 10px;
+}
+
+.btn{
+  cursor:pointer;
+  padding: 6px;
+  border:2px solid chocolate;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: rgb(228, 141, 79);
+  color: aliceblue;
+  width:40%;
+  margin-top:10px;
+}
+
+.btn:hover{
+  background-color: rgb(245, 245, 245);
+  color: chocolate;
+}
+
+.container{
+   display: flex;
+   gap:9rem 9rem ;
+  padding-bottom: 13rem;
+}
+
+.section{
+  width: 60%;
+}
+
+p{
+  font-size:18px;
+  line-height: 1.6;
+}
+
+.video-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .video {
+      margin: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video video {
+      width: 300px; /* Adjusted size */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+       /* #touch{
+         font-size: 30px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         margin-right: 20px;
+         font-weight: 500;
+         color: #fd5949;
+      } */
+
+       .para{
+        margin-left: 100px;
+        display: inline-block;
+        margin-top: 10px;
+        line-height: 1.3;
+        word-spacing: 3px;
+      } 
+
+      .video{
+        padding-top: 10px;
+        margin-top: 15px;
+      }
+      
+      .joinn{
+        text-align: center;
+        margin-bottom: 15px;
+       font-size: 22px;
+       font-weight: 700;
+       text-transform: uppercase;
+      color: rgb(0, 0, 0);
+      }
+
+      .social{
+         margin-top: 10px;
+      }
+
+      .icons a{
+         text-decoration: none;
+         padding-left: 7px;
+         margin-top: 1px;
+      }
+      .icons a:hover{
+         text-decoration:underline ;
+      }
+
+  #insta{
+     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+#fb{
+  color: #386fc1;
+}
+
+#pin{
+  color: red;
+}
+
+#twitter{
+   color: rgb(61, 175, 220);
+}
+
+#yt{
+  color: red;
+}
+#clips{
+  font-size: 30px;
+}
+.move{
+  margin-top: -190px;
+}
+  #footer{
+  text-align: center;
+  /* margin-bottom:0; */
+  margin-top: 20px;
+  background-color: chocolate;
+  color: aliceblue;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.dark-mode nav,
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1e1e1e; /* Dark header/footer/nav */
+}
+
+#dark-mode-btn a {
+  color: #ff8c00; /* Accent link color */
+}
+
+.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #ff8c00;
+  /* width:auto; */
+  max-width: 200px; 
+}
+
+
+</style>
+  <script src="https://kit.fontawesome.com/9e9cdc6ad3.js" crossorigin="anonymous"></script>
+  <script src="https://web3forms.com/#start "></script>
+</head>
+<body>
+
+  <!-- heading -->
+  <header>
+  <h1><strong>TASTY TALES</strong></h1>
+</header>
+
+<!-- links -->
+  <nav>
+    <a class="links" href="index.php">HOME</a>
+    <a class="links" href="about.html">ABOUT US</a>
+     <a class="links" href="recipes.html">RECIPES</a>
+     <a class="links"  href="blog.php">BLOG</a>
+     <button id="dark-mode-btn" class="btn dark-mode-toggle">🌙 Dark Mode</button>
+  </nav>    
+  <!--contact button  -->
+  <input type="button" id="btn" value="CONTACT" onclick="window.location.href='contact.html';" />
+  
+  <!-- contact info -->
+  <div class="container">  
+    <section class="section">
+      <!-- <p id="touch"> Want To Get In Touch?</p> -->
+      <h2>Contact Us</h3>
+      <p>For Assistance With TASTY TALES.com</p>
+      
+      Contact our Support Team: Submit a Help Request
+      View our Help Topics: TASTY TALES Help Center
+      
+      <h2>Work With Us</h3>
+     <p> Join our team of enthusiastic editors, designers, programmers, recipe developers, and more as we build out
+       the world's largest food site. ​​View job openings here.</p>
+      
+      <h2>Write for Us</h3>
+      <p>TASTY TALES is always on the lookout for talented new writers, recipe developers, equipment reviewers, 
+      and photographers who love cooking to join our team of contributors. We're currently accepting pitches for
+       recipes, news and trending articles, and features (especially personal essays and food histories). 
+      Please submit pitches or inquire about potential assignments by sharing a short bio and your relevant experience 
+      in our pitch form.</p>
+      </section>
+ <section>
+  <form class="form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="39bbd361-3679-486c-b299-728b411cd44d">
+
+    <div class="form-row">
+    <label for="username" class="text">Full Name :</label><br>
+     <input type="text" name="username" id="username" required autofocus><br><br>
+    </div>
+
+     <div class="form-row">
+     <label for="email" class="text">Email Id : </label><br>
+     <input type="email" name="email" id="email" required><br><br>
+    </div>
+
+     <div class="form-row">
+     <label for="msg" class="text">Message: </label><br>
+     <textarea name="msg" id="msg" rows="4" cols="22" maxlength="1000" ></textarea><br><br>
+    </div>
+
+     <input type="submit" value="Submit" onclick="" class="btn">
+  
+    </form>
+  </section>
+</div> 
+
+
+
+
+<div class="move">
+<h2 id="clips">Look At These Tasty Food Clips</h3>
+
+  <div class="video-container">
+      <video class="video" height="200px" width="300px" autoplay loop muted>
+          <source src="images/pexels_videos_2620043 (2160p).mp4" type="video/mp4">
+      </video>
+      <video class="video" height="200px" width="300px" autoplay loop muted>
+          <source src="images/video (1080p) (1).mp4" type="video/mp4">
+      </video>
+      <video class="video" height="200px" width="300px" autoplay loop muted>
+          <source src="images/video (1080p).mp4" type="video/mp4">
+      </video>
+  </div>
+
+
+<!-- social media platfrom contact-->
+<div class="social">
+<h3 class="joinn">Join Us At </h3>   
+
+<div class="icons">
+
+<a href="https://www.youtube.com/@tastytaleskitchen78" target="_blank" p id="yt" class="fa-brands fa-youtube fa-2x"></p></a>
+
+<a href="#" p id="twitter" class="fa-brands fa-twitter fa-2x"></p></a>
+
+<a href="" p id="pin" class="fa-brands fa-pinterest fa-2x"></p></a>
+
+<a href="#" p id="fb" class="fa-brands fa-facebook fa-2x"></p></a>
+
+<a href="https://www.instagram.com/_tastytales_/" target="_blank" p id="insta" class="fa-brands fa-square-instagram fa-2x"></p></a>
+</div>
+</div>
+</div>
+<!-- footer part -->
+  <footer id="footer">
+    &copy; <span id="date"></span> TastyTales Built By RutujaParamane
+  </footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
